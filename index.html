@@ -472,15 +472,15 @@
 							<div class="row animation-translate animation-item-2">
 								<div class="col-12 col-md-4">
 									<a class="card" href="#modal-project-1" data-toggle="modal">
-										<img class="card-img-top" src="rsc/project_1.jpg" alt="Nanovo">
+										<img class="card-img-top" src="rsc/reference.png">
 										<div class="card-body">
-											<h3 class="card-title">Nanovo</h3>
-											<h4 class="card-subtitle">Design e-shop</h4>
-											<p class="card-tags">Frontend — Backend</p>
+											<h3 class="card-title">Java Path Tracer</h3>
+											<h4 class="card-subtitle">University assignment</h4>
+											<p class="card-tags">Java - Path Tracing - Graphics</p>
 										</div>
 									</a>
 								</div>
-								<div class="col-12 col-md-4">
+								<!-- <div class="col-12 col-md-4">
 									<a class="card" href="#modal-project-2" data-toggle="modal">
 										<img class="card-img-top" src="rsc/project_2.jpg" alt="Bbop">
 										<div class="card-body">
@@ -489,8 +489,8 @@
 											<p class="card-tags">Design — Frontend — Backend</p>
 										</div>
 									</a>
-								</div>
-								<div class="col-12 col-md-4">
+								</div> -->
+								<!-- <div class="col-12 col-md-4">
 									<a class="card" href="#modal-project-3" data-toggle="modal">
 										<img class="card-img-top" src="rsc/project_3.jpg" alt="Janja Prokić">
 										<div class="card-body">
@@ -499,7 +499,7 @@
 											<p class="card-tags">Frontend — Backend</p>
 										</div>
 									</a>
-								</div>
+								</div> -->
 							</div>
 						</div>
 						<!-- <div class="section-footer animation-translate animation-item-3">
@@ -650,39 +650,39 @@
 				<div class="modal-body">
 					<article class="article">
 						<div class="article-header">
-							<h2 class="article-title">Nanovo</h2>
-							<h3 class="article-subtitle">Design e-shop</h3>
-							<p class="article-tags">Design — Frontend — Backend</p>
+							<h2 class="article-title">Java Path Tracer</h2>
+							<h3 class="article-subtitle">University assignment: Course CG Project</h3>
+							<p class="article-tags">Java - Path Tracing - Graphics</p>
 						</div>
 						<div class="row flex-column-reverse flex-lg-row">
 							<div class="col-12 col-lg-6">
 								<p>
-									Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-									tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
-									eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-									takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-									consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-									dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-									dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-									ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-									diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
-									diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+									University course during the second semester under Prof. dr. ir. Dutré. The aim of this course was to build a path tracer pretty much from scratch and perform several scientific tests on the convergence speed for different algorithms and parameters. The feature-set is rather limited but it is able to render Wavefront obj objects lit by point, area or environment lighting with NEE. Diffuse and (modified) phong BRDFs can be evaluated and importance sampled. More BRDFs like Cook-Torrance and Ward-Duer where implemented but not importance sampled. The entire scene uses a basic BVH, build bottom-up, as acceleration structure for efficient ray intersection and any-hit queries.
 								</p>
 								<p>
-									Stet clita, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
-									dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-									ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-									et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
-									est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
-									elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-									erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-									Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-									Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-									tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+									The rendering execution as well as the BVH building is fully multi-threaded on the CPU.
+								</p>
+								<p>
+									<h6>Unfinished business</h6>
+									This course was only a one semester and worth 3 studypoints, so the features are rather limited. There where a lot of aspects and algorithms I would have loved to have implemented like:
+									<ul>
+										<li>Progressive Multi-Jittered Sample Sequences</li>
+										<li>GGX BSDF with importance sampling</li>
+										<li>True Multiple-Importance sampling</li>
+										<li>...</li>
+									</ul>
+
+									I was able to implement a basic version of environment importance sampling using binning based on HDR's luminance values. Altough this method is relatively basic, it yielded much improved convergence speed for scenes lit using an environment map.
+
+									<video width="100%" controls>
+										<source src="rsc/env_sampling_sc.mp4" type="video/mp4">
+									</video>
 								</p>
 							</div>
 							<div class="col-12 col-lg-6">
-								<img class="img-fluid mb-10" src="rsc/project_1.jpg" alt="Nanovo">
+								<img class="img-fluid mb-10" src="rsc/reference.png">
+								<img class="img-fluid mb-10" src="rsc/caustics2.png" width="300px">
+								<img class="img-fluid mb-10" src="rsc/BVH_ganesh.png" width="300px">
 							</div>
 						</div>
 					</article>
